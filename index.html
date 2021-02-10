@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Calculator</title>
+    <script>
+function Per(){
+    var exp = document.calc.textview.value;
+    document.calc.textview.value = exp.substring(0, exp.length-1);
+    
+}
+    </script>
+    
+    
+</head>
+<body>
+  <h1>Java Script Calculator</h1>
+  <div class="calc">
+      <form name="calc">
+          <input name="textview" type="textview" class="screen shadow">
+    
+      
+      <table>
+          <tr>
+              <td><input type="button" class="btn btn1 shadow_outer " value="C" onclick="document.calc.textview.value =''"></td>
+              <td><input type="button" class="btn shadow_outer " value="%" onclick="Per()"></td>
+              <td><input type="button" class="btn shadow_outer" value="&#8730;" onclick="document.calc.textview.value = Math.sqrt(document.calc.textview.value)"></td>
+              <td><input type="button" class="btn shadow_outer" value="/" onclick="document.calc.textview.value+='/'"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="btn shadow_outer" value="7" onclick="document.calc.textview.value += '7'"></td>
+                <td><input type="button" class="btn shadow_outer" value="8" onclick="document.calc.textview.value +='8'"></td>
+                <td><input type="button" class="btn shadow_outer" value="9" onclick="document.calc.textview.value +='9'"></td>
+                <td><input type="button" class="btn shadow_outer" value="*" onclick="document.calc.textview.value +='*'"></td>
+  
+              </tr>
+              <tr>
+                <td><input type="button" class="btn shadow_outer" value="4" onclick="document.calc.textview.value +='4'"></td>
+                <td><input type="button" class="btn shadow_outer" value="5" onclick="document.calc.textview.value +='5'"></td>
+                <td><input type="button" class="btn shadow_outer" value="6" onclick="document.calc.textview.value +='6'"></td>
+                <td><input type="button" class="btn shadow_outer" value="-" onclick="document.calc.textview.value +='-'"></td>
+  
+              </tr>
+                  <tr>
+                <td><input type="button" class="btn shadow_outer" value="1" onclick="document.calc.textview.value +='1'"></td>
+                <td><input type="button" class="btn shadow_outer" value="2" onclick="document.calc.textview.value +='2'"></td>
+                <td><input type="button" class="btn shadow_outer" value="3" onclick="document.calc.textview.value +='3'"></td>
+                <td><input type="button" id="plus" class="btn shadow_outer" value="+" onclick="document.calc.textview.value +='+'"></td>
+
+              </tr>
+              <tr>
+                <td><input type="button" class="btn shadow_outer" value="0" onclick="document.calc.textview.value +='0'"></td>
+                <td><input type="button" class="btn shadow_outer" value="." onclick="document.calc.textview.value +='.'"></td>
+                <td><input type="button" class="btn shadow_outer" value="=" onclick="document.calc.textview.value = eval(document.calc.textview.value)"></td>
+  
+              </tr>
+              
+      </table>
+      </form>
+      
+  </div>
+  <br>
+  <h1>Designed and Code by Yasmine Siddiqi</h1>
+</body>
+</html>
